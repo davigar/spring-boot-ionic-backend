@@ -14,7 +14,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cursomc</name>
 	<description>Estudo de caso Java para Curso de Modelagem conceitual com UML</description>
-
+ 
+ 
+ 
+ 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

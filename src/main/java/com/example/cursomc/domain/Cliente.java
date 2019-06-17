@@ -59,8 +59,6 @@ public class Cliente implements Serializable{
 	@JsonIgnore
 	@OneToMany(mappedBy="cliente")
 	private List<Pedido> pedidos = new ArrayList<>();
-	
-	private String imageURL;
 
 	public Cliente() {
 		addPerfil(Perfil.CLIENTE);
@@ -151,14 +149,6 @@ public class Cliente implements Serializable{
 	
 	public Set<Perfil> getPerfis(){
 		return perfis.stream().map(x -> Perfil.toEnum(x)).collect(Collectors.toSet());
-	}
-	
-	public String getImageURL() {
-		return imageURL;
-	}
-
-	public void setImageURL(String imageURL) {
-		this.imageURL = imageURL;
 	}
 	
 	public void addPerfil(Perfil perfil) {
